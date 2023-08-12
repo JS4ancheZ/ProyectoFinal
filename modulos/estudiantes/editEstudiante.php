@@ -10,15 +10,15 @@
     $conexion = new Database;  
     $result = $conexion->editEstudiante($id);
 
-    $estud_id = $estud_identificacion = $estud_fnacimiento = $estud_nombres = $estud_apellidos = $estud_email = $estud_telefono = $estud_direccion = "";
+    $estud_id = $estud_nombres = $estud_apellidos = $estud_email = $estud_telefono = $estud_identificacion = $estud_fnacimiento = $estud_direccion = "";
     foreach($result->fetchAll(PDO::FETCH_OBJ) as $r){
         $estud_id = $r->id;
-        $estud_identificacion =  $r->identificacion;
-        $estud_fnacimiento =     $r->fnacimiento;
         $estud_nombres =         $r->nombres;
         $estud_apellidos =       $r->apellidos;
         $estud_email  =          $r->email;
         $estud_telefono =        $r->telefono;
+        $estud_identificacion =  $r->identificacion;
+        $estud_fnacimiento =     $r->fnacimiento;
         $estud_direccion =       $r->direccion
     }
     
@@ -47,17 +47,6 @@
                         <form action="update.php" method="POST" name="forrol">
 
                             <div class="form-group">
-                                <label for="identificacion">Identificacion</label>
-                                <input type="text" class="form-control" id="identificacion" name="identificacion" value="<?= $estud_identificacion ?>" required>
-                                <input type="hidden" class="form-control" id="id" name="id" value="<?= $estud_id ?>">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="fnacimiento">Fecha nacimiento</label>
-                                <input type="text" class="form-control" id="fnacimiento" name="fnacimiento" value="<?= $estud_fnacimiento ?>" required>
-                            </div>
-
-                            <div class="form-group">
                                 <label for="nombres">Nombres</label>
                                 <input type="text" class="form-control" id="nombres" name="nombres" value="<?= $estud_nombres ?>" required>
                             </div>
@@ -75,6 +64,17 @@
                             <div class="form-group">
                                 <label for="telefono">Telefono</label>
                                 <input type="text" class="form-control" id="telefono" name="telefono" value="<?= $estud_telefono ?>" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="identificacion">Identificacion</label>
+                                <input type="text" class="form-control" id="identificacion" name="identificacion" value="<?= $estud_identificacion ?>" required>
+                                <input type="hidden" class="form-control" id="id" name="id" value="<?= $estud_id ?>">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fnacimiento">Fecha nacimiento</label>
+                                <input type="text" class="form-control" id="fnacimiento" name="fnacimiento" value="<?= $estud_fnacimiento ?>" required>
                             </div>
 
                             <div class="form-group">

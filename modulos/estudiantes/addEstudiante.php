@@ -21,18 +21,10 @@
                         Creación de Estudiantes
                         <a href="<?= ROOT ?>modulos/estudiantes/estudiantes.php" class="btn btn-primary">Regresar</a>
                     </div>
+                    
                     <div class="card-body">
                         <form action="add.php" method="POST" name="forestudiantes">
                             <div id='mensaje'> </div>
-                            <div class="form-group">
-                                <label for="identificacion">Identificacion</label>
-                                <input type="text" class="form-control" id="identificacion" name="identificacion" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="fnacimiento">Fecha de Nacimiento</label>
-                                <input type="text" class="form-control" id="fnacimiento" name="fnacimiento" required>
-                            </div>
 
                             <div class="form-group">
                                 <label for="nombres">Nombres</label>
@@ -52,6 +44,16 @@
                             <div class="form-group">
                                 <label for="telefono">Telefono</label>
                                 <input type="text" class="form-control" id="telefono" name="telefono" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="identificacion">Identificacion</label>
+                                <input type="text" class="form-control" id="identificacion" name="identificacion" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fnacimiento">Fecha de Nacimiento</label>
+                                <input type="text" class="form-control" id="fnacimiento" name="fnacimiento" required>
                             </div>
 
                             <div class="form-group">

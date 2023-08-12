@@ -76,6 +76,9 @@
                                 <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Nombre</th>
+                                <th scope="col">Horario</th>
+                                <th scope="col">Docente</th>
+                                <th scope="col">Descripcion</th>
                                 <th scope="col">Herramientas</th>
                                 </tr>
                             </thead>

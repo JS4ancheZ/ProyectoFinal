@@ -102,7 +102,7 @@
 
         public function DatosMaterias() { 
             $conexion = Database::getInstance(); 
-            $sql="SELECT id,nombre from materias"; 
+            $sql="SELECT id,nombre,horario,docente,descripcion from materias"; 
             $result = $conexion->db->prepare($sql);    
             $result->execute(); 
             return $result; 
@@ -120,14 +120,17 @@
             }
         }
 
-        public function CrearMateria($nombre) { 
+        public function CrearMateria($nombre,$horario,$docente,$descripcion) { 
 
             try {
                 $conexion = Database::getInstance(); 
-                $result = $conexion->db->prepare("INSERT INTO materias (nombre) VALUES (:nombre)");
+                $result = $conexion->db->prepare("INSERT INTO materias (nombre,horario,docente,descripcion) VALUES (:nombre,:horario,:docente,:descripcion)");
                 $result->execute(
                                     array(
-                                        ':nombre'=>$nombre
+                                        ':nombre'=>$nombre,
+                                        ':horario'=>$horario,
+                                        ':docente'=>$docente,
+                                        ':descripcion'=>$descripcion
                                     )
                                 );
                 return "2";
@@ -138,21 +141,24 @@
 
         public function editMateria($id) { 
             $conexion = Database::getInstance(); 
-            $sql="SELECT id,nombre from materias where id=:id"; 
+            $sql="SELECT id,nombre,horario,docente,descripcion from materias where id=:id"; 
             $result = $conexion->db->prepare($sql);     
             $params = array("id" => $id); 
             $result->execute($params);
             return $result; 
         } 
 
-        public function updateMateria($nombre,$id) { 
+        public function updateMateria($nombre,$horario,$docente,$descripcion,$id) { 
 
             try {
                 $conexion = Database::getInstance(); 
-                $result = $conexion->db->prepare("UPDATE materias set nombre=:nombre where id=:id ");
+                $result = $conexion->db->prepare("UPDATE materias set nombre=:nombre, horario=:horario, docente=:docente, descripcion=:descripcion where id=:id ");
                 $result->execute(
                                     array(
                                         ':nombre'=>$nombre,
+                                        ':horario'=>$docente,
+                                        ':docente'=>$docente,
+                                        ':descripcion'=>$descripcion,
                                         ':id'=>$id
                                     )
                                 );

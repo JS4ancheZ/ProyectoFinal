@@ -47,41 +47,6 @@
                 </div>
             </article>
 
-            <article class="character">
-                <header> <h2> Beth </h2>  </header>
-                <img src="./img/Beth.jpeg">
-                <div class="info-character">
-                    <p> <b> Genero: </b> Masculino </p>
-                    <p> <b> Especie: </b> Humano </p>
-                </div>
-            </article>
-
-            <article class="character">
-                <header> <h2> Davin </h2>  </header>
-                <img src="./img/Davin.jpeg">
-                <div class="info-character">
-                    <p> <b> Genero: </b> Masculino </p>
-                    <p> <b> Especie: </b> Humano </p>
-                </div>
-            </article>
-
-            <article class="character">
-                <header> <h2> Arthricia </h2>  </header>
-                <img src="./img/Arthricia.jpeg">
-                <div class="info-character">
-                    <p> <b> Genero: </b> Masculino </p>
-                    <p> <b> Especie: </b> Humano </p>
-                </div>
-            </article>
-
-            <article class="character">
-                <header> <h2> Benjamin </h2>  </header>
-                <img src="./img/Benjamin.jpeg">
-                <div class="info-character">
-                    <p> <b> Genero: </b> Masculino </p>
-                    <p> <b> Especie: </b> Humano </p>
-                </div>
-            </article>
 
             
         </section>

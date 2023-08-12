@@ -44,6 +44,8 @@ function ValidarEstudiantes() {
     let apellidos       = document.getElementById('apellidos').value
     let email           = document.getElementById('email').value
     let telefono        = document.getElementById('telefono').value
+    let fnacimiento     = document.getElementById('fnacimiento').value
+    let direccion       = document.getElementById('direccion').value
 
     let mensajes=''
     
@@ -52,6 +54,8 @@ function ValidarEstudiantes() {
     if(nombres=='')     mensajes +='<li>Debes agregar tus nombres</li>'
     if(apellidos=='')   mensajes +='<li>Debes agregar tus apellidos</li>'
     if(identificacion=='')      mensajes +='<li>Debes agregar una identificacion</li>'
+    if(fnacimiento=='')   mensajes +='<li>Debes agregar la fecha de nacimiento</li>'
+    if(direccion=='')   mensajes +='<li>Debes agregar la direccion de domicilio</li>'
 
     if(mensajes!=''){
         document.getElementById('mensaje').innerHTML = `<div class='alert alert-danger' role='alert'> ${mensajes} </div>`
