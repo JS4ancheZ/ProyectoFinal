@@ -156,7 +156,7 @@
                 $result->execute(
                                     array(
                                         ':nombre'=>$nombre,
-                                        ':horario'=>$docente,
+                                        ':horario'=>$horario,
                                         ':docente'=>$docente,
                                         ':descripcion'=>$descripcion,
                                         ':id'=>$id
