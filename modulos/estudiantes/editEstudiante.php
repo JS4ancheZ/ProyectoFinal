@@ -62,7 +62,7 @@
                             <div class="form-group">
                                 <label for="telefono">Telefono</label>
                                 <input type="text" class="form-control" id="telefono" name="telefono" value="<?= $estud_telefono ?>" required>
-                            </div>
+                            </div> 
 
                             <div class="form-group">
                                 <label for="identificacion">Identificacion</label>

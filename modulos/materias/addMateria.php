@@ -1,4 +1,5 @@
-<?php 
+<?php
+    session_start();
     include_once("../../config/Config.php");
 
     
@@ -26,6 +27,7 @@
                     <div class="card-body">
                         <form action="add.php" method="POST" name="formateria">
                             <div id='mensaje'> </div>
+                            
                             <div class="form-group">
                                 <label for="nombre">Nombre</label>
                                 <input type="text" class="form-control" id="nombre" name="nombre" required>

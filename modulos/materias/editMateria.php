@@ -1,4 +1,5 @@
 <?php 
+    session_start();
     include_once("../../config/DBConect.php");
     include_once("../../config/Config.php");
     

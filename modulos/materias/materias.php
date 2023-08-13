@@ -89,6 +89,9 @@
                                         echo "<tr>
                                                 <td>".$row['id']."</td>
                                                 <td>".$row['nombre']."</td>
+                                                <td>".$row['horario']."</td>
+                                                <td>".$row['docente']."</td>
+                                                <td>".$row['descripcion']."</td>
                                                 <td>
                                                     <a href='editMateria.php?id=".$row['id']."' class='btn btn-primary'>Modificar</a>
                                                     <a href='delete.php?id=".$row['id']."' class='btn btn-danger'>Eliminar</a>
