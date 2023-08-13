@@ -34,17 +34,17 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="nombre">Horario</label>
+                                <label for="horario">Horario</label>
                                 <input type="text" class="form-control" id="horario" name="horario" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="nombre">Docente</label>
+                                <label for="docente">Docente</label>
                                 <input type="text" class="form-control" id="docente" name="docente" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="nombre">Descripcion</label>
+                                <label for="descripcion">Descripcion</label>
                                 <input type="text" class="form-control" id="descripcion" name="descripcion" required>
                             </div>
                             

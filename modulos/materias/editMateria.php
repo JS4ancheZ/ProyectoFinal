@@ -44,19 +44,19 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="nombre">Horario</label>
+                                <label for="horario">Horario</label>
                                 <input type="text" class="form-control" id="horario" name="horario" value="<?= $mat_horario ?>" required>
                                 <input type="hidden" class="form-control" id="horario" name="horario" value="<?= $mat_horario ?>">
                             </div>
 
                             <div class="form-group">
-                                <label for="nombre">Docente</label>
+                                <label for="docente">Docente</label>
                                 <input type="text" class="form-control" id="docente" name="docente" value="<?= $mat_docente ?>" required>
                                 <input type="hidden" class="form-control" id="docente" name="docente" value="<?= $mat_docente ?>">
                             </div>
 
                             <div class="form-group">
-                                <label for="nombre">Descripcion</label>
+                                <label for="descripcion">Descripcion</label>
                                 <input type="text" class="form-control" id="descripcion" name="descripcion" value="<?= $mat_descripcion ?>" required>
                                 <input type="hidden" class="form-control" id="descripcion" name="descripcion" value="<?= $mat_descripcion ?>">
                             </div>
