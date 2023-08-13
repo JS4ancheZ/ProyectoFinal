@@ -8,8 +8,8 @@
     if(isset($_POST['email']))          $email = $_POST['email']; 
     if(isset($_POST['telefono']))       $telefono = $_POST['telefono'];
     if(isset($_POST['identificacion'])) $identificacion = $_POST['identificacion']; 
-    if(isset($_POST['fnacimiento'])) $fnacimiento = $_POST['fnacimiento'];  
-    if(isset($_POST['direccion'])) $direccion = $_POST['direccion']; 
+    if(isset($_POST['fnacimiento']))    $fnacimiento = $_POST['fnacimiento'];  
+    if(isset($_POST['direccion']))      $direccion = $_POST['direccion']; 
 
     $conexion = new Database;  
     $result = $conexion->CrearEstudiante($nombres,$apellidos,$email,$telefono,$identificacion,$fnacimiento,$direccion);

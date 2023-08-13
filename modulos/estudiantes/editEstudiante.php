@@ -2,16 +2,14 @@
     include_once("../../config/DBConect.php");
     include_once("../../config/Config.php");
 
-    session_start();
-    $role = $_SESSION['sess_userrole'];
-
     $id = $_GET['id'];
 
     $conexion = new Database;  
     $result = $conexion->editEstudiante($id);
 
     $estud_id = $estud_nombres = $estud_apellidos = $estud_email = $estud_telefono = $estud_identificacion = $estud_fnacimiento = $estud_direccion = "";
-    foreach($result->fetchAll(PDO::FETCH_OBJ) as $r){
+    foreach($result->fetchAll(PDO::FETCH_OBJ) as $r)
+    {
         $estud_id = $r->id;
         $estud_nombres =         $r->nombres;
         $estud_apellidos =       $r->apellidos;
@@ -19,7 +17,7 @@
         $estud_telefono =        $r->telefono;
         $estud_identificacion =  $r->identificacion;
         $estud_fnacimiento =     $r->fnacimiento;
-        $estud_direccion =       $r->direccion
+        $estud_direccion =       $r->direccion;
     }
     
 ?>
