@@ -66,10 +66,17 @@ function ValidarEstudiantes() {
 }
 
 function ValidarMaterias() {
-    let nombre    = document.getElementById('nombre').value
+    let nombre        = document.getElementById('nombre').value
+    let horario       = document.getElementById('horario').value
+    let docente       = document.getElementById('docente').value
+    let descripcion   = document.getElementById('descripcion').value
+
     let mensajes=''
     
-    if(nombre=='')   mensajes +='<li>Debes ingresar nombre de la materia</li>'
+    if(nombre=='')      mensajes +='<li>Debes ingresar nombre de la materia</li>'
+    if(horario=='')     mensajes +='<li>Debes ingresar el horario de la materia</li>'
+    if(docente=='')     mensajes +='<li>Debes ingresar nombre del docente de la materia</li>'
+    if(descripcion=='') mensajes +='<li>Debes ingresar la descripcion de la materia</li>'
 
     if(mensajes!=''){
         document.getElementById('mensaje').innerHTML = `<div class='alert alert-danger' role='alert'> ${mensajes} </div>`

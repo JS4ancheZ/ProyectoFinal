@@ -8,10 +8,13 @@
     $conexion = new Database;  
     $result = $conexion->editMateria($id);
 
-    $mat_id = $mat_nombre = "";
+    $mat_id = $mat_nombre = $mat_horario = $mat_docente = $mat_descripcion = "";
     foreach($result->fetchAll(PDO::FETCH_OBJ) as $r){
         $mat_id = $r->id;
         $mat_nombre = $r->nombre;
+        $mat_horario = $r->horario;
+        $mat_docente = $r->docente;
+        $mat_descripcion = $r->descripcion;
     }
     
 ?>
