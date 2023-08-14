@@ -39,6 +39,14 @@
                     Materias 
                 </a>  
             </li>
+
+            <li> 
+                <a href="<?= ROOT ?>index.php">    
+                    Inicio  
+                </a>  
+            </li>
+
+
         </ul>
     </nav>
     <div class="container">

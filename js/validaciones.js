@@ -39,11 +39,11 @@ function ValidarRoles() {
 }
 
 function ValidarEstudiantes() {
-    let identificacion  = document.getElementById('identificacion').value
     let nombres         = document.getElementById('nombres').value
     let apellidos       = document.getElementById('apellidos').value
     let email           = document.getElementById('email').value
     let telefono        = document.getElementById('telefono').value
+    let identificacion  = document.getElementById('identificacion').value
     let fnacimiento     = document.getElementById('fnacimiento').value
     let direccion       = document.getElementById('direccion').value
 

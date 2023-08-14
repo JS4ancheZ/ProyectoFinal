@@ -17,8 +17,8 @@
         $estud_email  =          $r->email;
         $estud_telefono =        $r->telefono;
         $estud_identificacion =  $r->identificacion;
-        $estud_fnacimiento =     $r->fnacimiento;
-        $estud_direccion =       $r->direccion;
+        @$estud_fnacimiento =     $r->fnacimiento;
+        @$estud_direccion =       $r->direccion;
     }
     
 ?>

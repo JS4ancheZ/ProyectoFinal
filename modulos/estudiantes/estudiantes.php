@@ -39,12 +39,19 @@
                     Materias 
                 </a>  
             </li>
+
+            <li> 
+                <a href="<?= ROOT ?>index.php">    
+                    Inicio  
+                </a>  
+            </li>
+
         </ul>
     </nav>
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-sm-8 col-xl-8">
+            <div class="col-sm-10 col-xl-10">
                 <div class="card">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         Listado de Estudiantes
@@ -99,7 +106,6 @@
                                                 <td>".$row['fnacimiento']."</td>
                                                 <td>".$row['direccion']."</td>
                                                 <td>
-                                                    <a href='".ROOT."/modulos/notas/notas.php?id=".$row['id']."' class='btn btn-success'>Notas</a>
                                                     <a href='editEstudiante.php?id=".$row['id']."' class='btn btn-primary'>Modificar</a>
                                                     <a href='delete.php?id=".$row['id']."' class='btn btn-danger'>Eliminar</a>
                                                 </td>
