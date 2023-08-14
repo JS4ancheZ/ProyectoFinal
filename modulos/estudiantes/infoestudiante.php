@@ -7,9 +7,7 @@
     $usu_identi = $_SESSION['sess_identificacion'];
     $usu_email = $_SESSION['sess_username'];
 
-    $conexion = new Database;  
-    $result = $conexion->ConsultarNotasEstudiante($usu_identi,$usu_email);
-    
+
 
 ?>
 

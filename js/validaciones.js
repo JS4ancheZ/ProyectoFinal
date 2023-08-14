@@ -8,7 +8,7 @@ function ValidarRegistro() {
 
     let mensajes=''
     
-    if(password!=confir) mensajes +='<li>Las contraseñas no son iguales</li>'
+    if(password!=confir)mensajes +='<li>Las contraseñas no son iguales</li>'
     if(username=='')    mensajes +='<li>Debes agregar un correo electronico</li>'
     if(password=='')    mensajes +='<li>Debes agregar una contraseña</li>'
     if(nombres=='')     mensajes +='<li>Debes agregar tus nombres</li>'
@@ -49,13 +49,13 @@ function ValidarEstudiantes() {
 
     let mensajes=''
     
-    if(telefono=='')    mensajes +='<li>Debes agregar un numero de telefono</li>'
-    if(email=='')       mensajes +='<li>Debes agregar un correo electronico</li>'
-    if(nombres=='')     mensajes +='<li>Debes agregar tus nombres</li>'
-    if(apellidos=='')   mensajes +='<li>Debes agregar tus apellidos</li>'
-    if(identificacion=='')      mensajes +='<li>Debes agregar una identificacion</li>'
-    if(fnacimiento=='')   mensajes +='<li>Debes agregar la fecha de nacimiento</li>'
-    if(direccion=='')   mensajes +='<li>Debes agregar la direccion de domicilio</li>'
+    if(telefono=='')         mensajes +='<li>Debes agregar un numero de telefono</li>'
+    if(email=='')            mensajes +='<li>Debes agregar un correo electronico</li>'
+    if(nombres=='')          mensajes +='<li>Debes agregar tus nombres</li>'
+    if(apellidos=='')        mensajes +='<li>Debes agregar tus apellidos</li>'
+    if(identificacion=='')   mensajes +='<li>Debes agregar una identificacion</li>'
+    if(fnacimiento=='')      mensajes +='<li>Debes agregar la fecha de nacimiento</li>'
+    if(direccion=='')        mensajes +='<li>Debes agregar la direccion de domicilio</li>'
 
     if(mensajes!=''){
         document.getElementById('mensaje').innerHTML = `<div class='alert alert-danger' role='alert'> ${mensajes} </div>`
