@@ -57,7 +57,7 @@
     
 
     <footer>
-        <p> Creado por Cristhian Galvis</p>
+        <p> Creado por Nacy Yolima Rodriguez Ovallos - Omar José Triana Alvarez - Juan Miguel Sanchez Restrepo</p>
     </footer>
 
     <script src="./js/javascript.js"></script>
