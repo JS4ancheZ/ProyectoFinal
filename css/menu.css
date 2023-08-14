@@ -1,6 +1,6 @@
 nav {
-    background-color: rgb(59, 26, 53);
-    color: white;
+    background-color: rgb(255, 254, 255);
+    color: black;
 }
 
 .menu {
@@ -17,6 +17,12 @@ nav {
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
+}
+
+.Paglogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {

@@ -7,6 +7,7 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" type="text/css" href="./css/estilos.css">
     <link rel="stylesheet" type="text/css" href="./css/menu.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
 
@@ -35,23 +36,13 @@
     <div class="container">
         <header> 
             <h1> 
-                Personajes de Rick and Morty
+               PROYECTO FINAL DESARROLLO WEB FULL STACK
             </h1>
         </header>
      
-        <section class="section-flex">
-            <article class="character">
-                <header> <h2> Rick Sanchez</h2>  </header>
-                <img src="./img/Rick.jpeg">
-                <div class="info-character">
-                    <p> <b> Genero: </b> Masculino </p>
-                    <p> <b> Especie: </b> Humano </p>
-                </div>
-            </article>
-
-
-            
-        </section>
+        <div class="paglogo">
+            <img src="./img/Plogo.png" alt="Paglogo">
+        </div>
 
     </div>
     
