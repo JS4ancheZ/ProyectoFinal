@@ -1,7 +1,7 @@
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 5px;
+    padding: 5px;
 }
 
 .container {
@@ -31,9 +31,14 @@ footer {
     background-color: rgb(17, 12, 34);
     color: white;
     height: 80px; 
-    text-align:end;
+    text-align:center;
 }
 
-footer p {
-    padding-top: 2%;
+
+.logo{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
