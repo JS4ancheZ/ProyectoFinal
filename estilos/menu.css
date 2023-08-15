@@ -18,9 +18,17 @@ nav {
 }
 
 .menu a {
-    color: white;
+    color: rgb(7, 0, 0);
    font-family: 'Varela Round', sans-serif;
     text-decoration: none;
+}
+
+.menu a:hover{
+    background-color: #110881;
+    color: white;
+    border: 5px #110881 solid;
+    border-radius: 3px;
+
 }
 
 .paglogo {
@@ -33,4 +41,11 @@ nav {
     flex-grow: 3;
 }
 
+.logo img{
+    width: 20%;    
+}
+
+h1 {
+    color: white;
+}
 

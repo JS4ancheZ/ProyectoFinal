@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Estilos CSS -->
-    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
-    <link rel="stylesheet" type="text/css" href="./css/menu.css">
+    <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+    <link rel="stylesheet" type="text/css" href="estilos/menu.css">
+   <!--<link rel="stylesheet" type="text/css" href="http://localhost/proyectofinal/estilos/menu.css"-->
 </head>
 <body>
 
@@ -14,7 +15,7 @@
         <ul class="menu">
             <li class="logo"> 
                 <a href="https://campus.udecatalunya.edu.co/user_dashboard"> 
-                    <img src="./img/logo.png"> 
+                    <img src="./imgP/logo.png"> 
                 </a>  
             </li>
 
@@ -40,7 +41,7 @@
         </header>
      
         <div class="paglogo">
-            <img src="./img/Plogo.png" alt="Paglogo">
+            <img src="./imgP/Plogo.png" alt="Paglogo">
         </div>
 
     </div>

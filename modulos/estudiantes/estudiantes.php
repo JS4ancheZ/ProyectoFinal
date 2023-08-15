@@ -18,15 +18,15 @@
     <title>Document</title>
     <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="../../css/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="../../css/estilos.css">
-    <link rel="stylesheet" type="text/css" href="../../css/menu.css">
+    <link rel="stylesheet" type="text/css" href="../../estilos/estilos.css">
+    <link rel="stylesheet" type="text/css" href="../../estilos/menu.css">
 </head>
 <body>
     <nav>
         <ul class="menu">
             <li class="logo"> 
                 <a href="#"> 
-                    <img src="../../img/logo.png"> 
+                    <img src="../../imgP/logo.png"> 
                 </a>  
             </li>
             <li> 
@@ -51,7 +51,7 @@
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-sm-10 col-xl-10">
+            <div class="col-sm-10 col-xl-12">
                 <div class="card">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         Listado de Estudiantes

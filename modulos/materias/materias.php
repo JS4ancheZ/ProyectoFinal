@@ -17,16 +17,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../../css/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="../../css/estilos.css">
-    <link rel="stylesheet" type="text/css" href="../../css/menu.css">
+    <link href="../../estilos/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../../estilos/estilos.css">
+    <link rel="stylesheet" type="text/css" href="../../estilos/menu.css">
 </head>
 <body>
     <nav>
         <ul class="menu">
             <li class="logo"> 
                 <a href="#"> 
-                    <img src="../../img/logo.png"> 
+                    <img src="../../imgP/logo.png"> 
                 </a>  
             </li>
             <li> 

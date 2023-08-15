@@ -19,13 +19,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../../estilos/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-sm-8 col-xl-8">
+            <div class="col-sm-10 col-xl-10">
                 <div class="card">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         Mis notas <?= $_SESSION['sess_usernom'].' '.$_SESSION['sess_userapel'] ?>
