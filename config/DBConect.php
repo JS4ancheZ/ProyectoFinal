@@ -57,7 +57,7 @@
 
         public function editEstudiante($id) { 
             $conexion = Database::getInstance(); 
-            $sql="SELECT id,identificacion,nombres,apellidos,email,telefono from estudiantes where id=:id"; 
+            $sql="SELECT id,nombres,apellidos,email,telefono,identificacion,fnacimiento,direccion from estudiantes where id=:id"; 
             $result = $conexion->db->prepare($sql);     
             $params = array("id" => $id); 
             $result->execute($params);
@@ -68,7 +68,7 @@
 
             try {
                 $conexion = Database::getInstance(); 
-                $result = $conexion->db->prepare("UPDATE estudiantes set nombres=:nombres,apellidos=:apellidos,email=:email,telefono=:telefono,identificacion=:identificacion where id=:id ");
+                $result = $conexion->db->prepare("UPDATE estudiantes set nombres=:nombres,apellidos=:apellidos,email=:email,telefono=:telefono,identificacion=:identificacion,fnacimiento=:fnacimiento,direccion=:direccion where id=:id ");
                 $result->execute(
                                     array(
                                         ':nombres'=>    $nombres,
