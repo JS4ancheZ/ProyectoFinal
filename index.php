@@ -14,7 +14,7 @@
     <nav>
         <ul class="menu">
             <li class="logo"> 
-                <a href="#"> 
+                <a href="https://campus.udecatalunya.edu.co/user_dashboard"> 
                     <img src="./img/logo.png"> 
                 </a>  
             </li>
